@@ -1,0 +1,31 @@
+<div class="container mt-4">
+  <div class="row"> 
+    *//interpolacion//*
+    <h3>Hola mi nombre es {{nombre}}</h3>
+    <h3>La suma de 10 + 15 = {{getSuma(10,15)}}</h3>
+    <br>
+    *//interpolacion*
+    <br><br>
+    *//property binding*
+    <input type="text" class="form-control" [placeholder]="textoPlaceholder" [disabled]="deshabilitado">
+    <br>
+    </div>
+    <img [src]="imgSrc" alt="Img" height="400px" width="400px" />
+    <br>
+    *//property binding//*
+    <br><br>
+    */event binding//*
+    <h3>{{textos}}</h3>
+    <br>
+    <button class="btn btn-primary"(click)="cambiarTexto()">Clickeame</button>
+    <br><br>
+    */event binding//*
+
+    <br><br>
+    *//two way data binding//*
+    <input type="text" class="form-control" placeholder="Escriba aqui"[(ngModel)]="texto">
+    <br>
+    {{texto}}
+    <br><br>
+    *//two way data binding//*
+</div>
